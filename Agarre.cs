@@ -11,6 +11,7 @@ public class Agarre : MonoBehaviour
         if (other.tag == "ZonadeInteraccion")
         {
             other.GetComponentInParent<PickUpObject>().ObjectToPickUp = this.gameObject;
+            AudioManager.Instance.Play2D("detectarobj");
         }
     }
 
